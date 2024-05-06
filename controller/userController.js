@@ -1,3 +1,5 @@
+const bcrypt = require("bcrypt");
+
 const ApiError = require('../errors/apiError');
 const { NOT_FOUND_ID} = require("../errors/constants");
 
