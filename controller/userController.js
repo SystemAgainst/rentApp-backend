@@ -1,3 +1,6 @@
+const ApiError = require('../errors/apiError');
+const { NOT_FOUND_ID} = require("../errors/constants");
+
 class UserController {
     async register(req, res) {
         try {
@@ -15,17 +18,13 @@ class UserController {
         }
     }
 
-    async logout(req, res) {
+    async check(req, res, next) {
         try {
-
-        } catch (error) {
-            console.error(error);
-        }
-    }
-
-    async getUsers(req, res) {
-        try {
-            res.json("server works...");
+            const { id } = req.query;
+            if (!id) {
+                return next(ApiError.badRequest(NOT_FOUND_ID))
+            }
+            res.json(id);
         } catch (error) {
             console.error(error);
         }

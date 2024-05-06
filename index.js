@@ -4,6 +4,7 @@ const sequelize = require('./config/db');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const router = require('./routes/index');
+const errorHandler = require('./middlewares/errorHandlingMiddleware');
 
 
 const PORT = process.env.PORT || 5050;
@@ -15,6 +16,8 @@ app
     .use(express.json())
     .use("/api/v1", router)
     .use(cookieParser())
+
+    .use(errorHandler)
 
 const start = async () => {
     try {

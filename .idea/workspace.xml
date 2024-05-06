@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5a41394-ab3b-460f-82cb-08203d98657a" name="Changes" comment="add: added router and fixed db connection">
-      <change afterPath="$PROJECT_DIR$/error/apiError.js" afterDir="false" />
+    <list default="true" id="e5a41394-ab3b-460f-82cb-08203d98657a" name="Changes" comment="add: added error handler claa">
+      <change afterPath="$PROJECT_DIR$/middlewares/errorHandlingMiddleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error/apiError.js" beforeDir="false" afterPath="$PROJECT_DIR$/errors/apiError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/userRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +114,7 @@
       <workItem from="1714974256246" duration="10000" />
       <workItem from="1715007200184" duration="794000" />
       <workItem from="1715008004081" duration="279000" />
-      <workItem from="1715009254940" duration="941000" />
+      <workItem from="1715009254940" duration="1570000" />
     </task>
     <task id="LOCAL-00001" summary="add: added .gitignore and catalog config">
       <option name="closed" value="true" />
@@ -138,7 +140,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715009779440</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add: added error handler claa">
+      <option name="closed" value="true" />
+      <created>1715010317329</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715010317329</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add: added error handler claa">
+      <option name="closed" value="true" />
+      <created>1715010328714</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715010328714</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +166,7 @@
     <MESSAGE value="add: added .gitignore and catalog config" />
     <MESSAGE value="add: added user model" />
     <MESSAGE value="add: added router and fixed db connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: added router and fixed db connection" />
+    <MESSAGE value="add: added error handler claa" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: added error handler claa" />
   </component>
 </project>
