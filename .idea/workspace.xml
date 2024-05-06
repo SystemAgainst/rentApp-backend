@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5a41394-ab3b-460f-82cb-08203d98657a" name="Changes" comment="add: added error handler claa">
-      <change afterPath="$PROJECT_DIR$/middlewares/errorHandlingMiddleware.js" afterDir="false" />
+    <list default="true" id="e5a41394-ab3b-460f-82cb-08203d98657a" name="Changes" comment="add: unversioned files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error/apiError.js" beforeDir="false" afterPath="$PROJECT_DIR$/errors/apiError.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/userRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errors/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/errors/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +154,31 @@
       <option name="project" value="LOCAL" />
       <updated>1715010328714</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add: added new libs for auth">
+      <option name="closed" value="true" />
+      <created>1715011277441</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715011277441</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add: unversioned files">
+      <option name="closed" value="true" />
+      <created>1715011376549</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715011376549</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add: unversioned files">
+      <option name="closed" value="true" />
+      <created>1715011382002</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715011382002</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +189,8 @@
     <MESSAGE value="add: added user model" />
     <MESSAGE value="add: added router and fixed db connection" />
     <MESSAGE value="add: added error handler claa" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: added error handler claa" />
+    <MESSAGE value="add: added new libs for auth" />
+    <MESSAGE value="add: unversioned files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: unversioned files" />
   </component>
 </project>
