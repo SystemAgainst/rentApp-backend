@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5a41394-ab3b-460f-82cb-08203d98657a" name="Changes" comment="add: added user model">
-      <change afterPath="$PROJECT_DIR$/controller/userController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/userRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="e5a41394-ab3b-460f-82cb-08203d98657a" name="Changes" comment="add: added router and fixed db connection">
+      <change afterPath="$PROJECT_DIR$/error/apiError.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/token.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/tokenModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/userModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/userRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +112,7 @@
       <workItem from="1714974256246" duration="10000" />
       <workItem from="1715007200184" duration="794000" />
       <workItem from="1715008004081" duration="279000" />
-      <workItem from="1715009254940" duration="308000" />
+      <workItem from="1715009254940" duration="941000" />
     </task>
     <task id="LOCAL-00001" summary="add: added .gitignore and catalog config">
       <option name="closed" value="true" />
@@ -134,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714485819108</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add: added router and fixed db connection">
+      <option name="closed" value="true" />
+      <created>1715009779440</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715009779440</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +147,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add: added .gitignore and catalog config" />
     <MESSAGE value="add: added user model" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: added user model" />
+    <MESSAGE value="add: added router and fixed db connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: added router and fixed db connection" />
   </component>
 </project>
