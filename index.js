@@ -6,6 +6,9 @@ const cookieParser = require('cookie-parser');
 const router = require('./routes/index');
 const errorHandler = require('./middlewares/errorHandlingMiddleware');
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerFile = require('./config/swagger-output.json');
+
 
 const PORT = process.env.PORT || 5050;
 
@@ -15,6 +18,7 @@ app
     .use(cors())
     .use(express.json())
     .use("/api/v1", router)
+    .use('/api/v1/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
     .use(cookieParser())
 
     .use(errorHandler)
