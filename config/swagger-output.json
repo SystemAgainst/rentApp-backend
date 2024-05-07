@@ -29,14 +29,26 @@
                 },
                 "role": {
                   "example": "any"
+                },
+                "name": {
+                  "example": "any"
+                },
+                "last_name": {
+                  "example": "any"
+                },
+                "passport_number": {
+                  "example": "any"
+                },
+                "passport_series": {
+                  "example": "any"
                 }
               }
             }
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Created"
           }
         }
       }
@@ -86,14 +98,26 @@
                 },
                 "role": {
                   "example": "any"
+                },
+                "name": {
+                  "example": "any"
+                },
+                "last_name": {
+                  "example": "any"
+                },
+                "passport_number": {
+                  "example": "any"
+                },
+                "passport_series": {
+                  "example": "any"
                 }
               }
             }
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Created"
           }
         }
       }

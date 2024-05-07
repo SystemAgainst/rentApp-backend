@@ -1,14 +1,60 @@
 const bcrypt = require("bcrypt");
-
+const jwt = require('jsonwebtoken')
+const { User, Passport } = require("../models/index");
 const ApiError = require('../errors/apiError');
-const { NOT_FOUND_ID} = require("../errors/constants");
+const {
+    NOT_FOUND_ID,
+    INVALID_DATA,
+    EMAIL_EXIST,
+    INTERNAL_ERROR,
+} = require("../errors/constants");
+
+const generateJwt = (id, email, role, name, last_name, middle_name, passport_number, passport_series) => {
+    return jwt.sign(
+        {id, email, role, name, last_name, middle_name, passport_number, passport_series},
+        process.env.SECRET_KEY,
+        {expiresIn: '24h'}
+    )
+}
 
 class UserController {
-    async register(req, res) {
+    async register(req, res, next) {
         try {
+            const { email, password, role, name, last_name, passport_number, passport_series } = req.body;
+
+            if (!email || !password) {
+                return next(ApiError.badRequest(INVALID_DATA));
+            }
+
+            const existedUser = await User.findOne({ where: { email } });
+
+            if (existedUser) {
+                return next(ApiError.badRequest(EMAIL_EXIST))
+            }
+
+            const hashedPassword = await bcrypt.hash(password, 5);
+
+            const passport = await Passport.create({
+                name,
+                last_name,
+                passport_number,
+                passport_series,
+            });
+
+            const user = await User.create({
+                email,
+                password: hashedPassword,
+                role,
+                passport_id: passport.id,
+            });
+
+            const token = generateJwt(user.id, user.email, user.role);
+
+            return res.status(201).json({ token });
 
         } catch (error) {
             console.error(error);
+            return next(ApiError.internal(INTERNAL_ERROR));
         }
     }
 
