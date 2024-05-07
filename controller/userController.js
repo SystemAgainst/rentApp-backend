@@ -6,7 +6,8 @@ const {
     NOT_FOUND_ID,
     INVALID_DATA,
     EMAIL_EXIST,
-    INTERNAL_ERROR,
+    INTERNAL_ERROR, USER_NOT_FOUND,
+    INCORRECT_PASSWORD,
 } = require("../errors/constants");
 
 const generateJwt = (id, email, role, name, last_name, middle_name, passport_number, passport_series) => {
@@ -58,11 +59,26 @@ class UserController {
         }
     }
 
-    async login(req, res) {
+    async login(req, res, next) {
         try {
+            const { email, password } = req.body;
 
+            const user = await User.findOne( { where: {email} } );
+
+            if (!user) {
+                return next(ApiError.internal(USER_NOT_FOUND))
+            }
+
+            let comparedPassword = bcrypt.compareSync(password, user.password);
+
+            if (!comparedPassword) {
+                return next(ApiError.internal(INCORRECT_PASSWORD));
+            }
+
+            const token = generateJwt(user.id, user.email, user.role);
+            return res.json({token});
         } catch (error) {
-            console.error(error);
+            return next(ApiError.internal(INTERNAL_ERROR));
         }
     }
 
