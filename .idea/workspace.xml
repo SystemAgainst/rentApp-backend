@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5a41394-ab3b-460f-82cb-08203d98657a" name="Changes" comment="add: realized registration of user">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e5a41394-ab3b-460f-82cb-08203d98657a" name="Changes" comment="add: realized user login">
+      <change afterPath="$PROJECT_DIR$/middlewares/authMiddleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/userController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/errors/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/errors/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/userRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +113,7 @@
       <workItem from="1715007200184" duration="794000" />
       <workItem from="1715008004081" duration="279000" />
       <workItem from="1715009254940" duration="1570000" />
-      <workItem from="1715091103654" duration="5183000" />
+      <workItem from="1715091103654" duration="5735000" />
     </task>
     <task id="LOCAL-00001" summary="add: added .gitignore and catalog config">
       <option name="closed" value="true" />
@@ -234,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715095920691</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add: realized user login">
+      <option name="closed" value="true" />
+      <created>1715096887985</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715096887985</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +271,7 @@
     <MESSAGE value="add: added constants" />
     <MESSAGE value="add: added swagger" />
     <MESSAGE value="add: realized registration of user" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: realized registration of user" />
+    <MESSAGE value="add: realized user login" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: realized user login" />
   </component>
 </project>
