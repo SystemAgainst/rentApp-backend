@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5a41394-ab3b-460f-82cb-08203d98657a" name="Changes" comment="add: realized user login">
-      <change afterPath="$PROJECT_DIR$/middlewares/authMiddleware.js" afterDir="false" />
+    <list default="true" id="e5a41394-ab3b-460f-82cb-08203d98657a" name="Changes" comment="add: realized user check and middleware to check auth user">
+      <change afterPath="$PROJECT_DIR$/controller/flatController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/flatRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errors/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/errors/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/userRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +115,9 @@
       <workItem from="1715008004081" duration="279000" />
       <workItem from="1715009254940" duration="1570000" />
       <workItem from="1715091103654" duration="5735000" />
+      <workItem from="1715144474651" duration="11000" />
+      <workItem from="1715337539935" duration="1551000" />
+      <workItem from="1715340390462" duration="3363000" />
     </task>
     <task id="LOCAL-00001" summary="add: added .gitignore and catalog config">
       <option name="closed" value="true" />

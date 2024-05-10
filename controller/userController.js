@@ -3,7 +3,6 @@ const jwt = require('jsonwebtoken')
 const { User, Passport } = require("../models/index");
 const ApiError = require('../errors/apiError');
 const {
-    NOT_FOUND_ID,
     INVALID_DATA,
     EMAIL_EXIST,
     INTERNAL_ERROR, USER_NOT_FOUND,
@@ -82,7 +81,7 @@ class UserController {
         }
     }
 
-    async check(req, res, next) {
+    async check(req, res) {
         const token = generateJwt(req.user.id, req.user.email, req.user.role);
         return res.status(201).json({ token });
     }
