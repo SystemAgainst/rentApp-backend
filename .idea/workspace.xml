@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5a41394-ab3b-460f-82cb-08203d98657a" name="Changes" comment="add: init new entity - flat">
-      <change afterPath="$PROJECT_DIR$/models/apartmentInfoModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/apartmentModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/apartmentStatusModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/flatController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/apartmentController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/tokenModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/paymentModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/flatRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/apartmentRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+    <list default="true" id="e5a41394-ab3b-460f-82cb-08203d98657a" name="Changes" comment="add: added entities for apartment, payment and its associations">
+      <change beforePath="$PROJECT_DIR$/controller/apartmentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/apartmentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/userModel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +119,7 @@
       <workItem from="1715091103654" duration="5735000" />
       <workItem from="1715144474651" duration="11000" />
       <workItem from="1715337539935" duration="1551000" />
-      <workItem from="1715340390462" duration="7217000" />
+      <workItem from="1715340390462" duration="8313000" />
     </task>
     <task id="LOCAL-00001" summary="add: added .gitignore and catalog config">
       <option name="closed" value="true" />
@@ -262,7 +257,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715358430421</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="upd: rename flat to apartment">
+      <option name="closed" value="true" />
+      <created>1715412704551</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1715412704551</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add: added entities for apartment, payment and its associations">
+      <option name="closed" value="true" />
+      <created>1715412739422</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1715412739422</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +303,8 @@
     <MESSAGE value="add: realized registration of user" />
     <MESSAGE value="add: realized user login" />
     <MESSAGE value="add: init new entity - flat" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: init new entity - flat" />
+    <MESSAGE value="upd: rename flat to apartment" />
+    <MESSAGE value="add: added entities for apartment, payment and its associations" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: added entities for apartment, payment and its associations" />
   </component>
 </project>

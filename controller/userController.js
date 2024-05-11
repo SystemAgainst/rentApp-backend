@@ -1,6 +1,6 @@
 const bcrypt = require("bcrypt");
 const jwt = require('jsonwebtoken')
-const { User, Passport } = require("../models/index");
+const { User, Passport } = require("../models");
 const ApiError = require('../errors/apiError');
 const {
     INVALID_DATA,
