@@ -2,12 +2,19 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/db');
 
 
-
-const ApartmentInfo = sequelize.define('apartment_info', {
+const ApartmentInfo = sequelize.define('ApartmentInfo', {
     id: {
         type: DataTypes.BIGINT,
         primaryKey: true,
         autoIncrement: true
+    },
+    title: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+    },
+    description: {
+        type: DataTypes.TEXT,
+        allowNull: true,
     },
     address: {
         type: DataTypes.TEXT,
@@ -21,6 +28,8 @@ const ApartmentInfo = sequelize.define('apartment_info', {
         type: DataTypes.BIGINT,
         allowNull: false
     },
+}, {
+    tableName: 'apartment_info',
 });
 
 module.exports = ApartmentInfo;
