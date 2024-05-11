@@ -1,4 +1,4 @@
-class FlatController {
+class ApartmentController {
     async getAll(req, res) {};
 
     async create(req, res) {};
@@ -10,4 +10,4 @@ class FlatController {
     async delete(req, res) {};
 }
 
-module.exports = new FlatController();
+module.exports = new ApartmentController();
