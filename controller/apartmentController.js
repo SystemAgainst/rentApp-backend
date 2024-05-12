@@ -3,13 +3,15 @@ const { ApartmentInfo, Apartment, ApartmentStatus} = require('../models');
 
 class ApartmentController {
     async getAll(req, res) {
-        try {
+        let { user_id, payment_id, apartment_status_id, apartment_info_id } = req.query;
 
-        } catch (error) {
-            res.status(500).send({
-                message: "Ошибка при получении списка апартаментов: " + error.message
-            });
+        let apartments;
+
+        if (!user_id && !payment_id && !apartment_status_id && !apartment_info_id) {
+            apartments = await Apartment.findAndCountAll();
         }
+
+        res.status(201).json(apartments);
     };
 
     async create(req, res) {

@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5a41394-ab3b-460f-82cb-08203d98657a" name="Changes" comment="add: added get certain apartment">
-      <change afterPath="$PROJECT_DIR$/middlewares/checkRoleMiddleware.js" afterDir="false" />
+    <list default="true" id="e5a41394-ab3b-460f-82cb-08203d98657a" name="Changes" comment="add: added role middleware">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/userModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/apartmentRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/apartmentRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/apartmentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/apartmentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,23 +47,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore_missing_gitignore": "true",
-    "last_opened_file_path": "/Users/tgdzh/WebstormProjects/rentApp_backend/models",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "ts.external.directory.path": "/Users/tgdzh/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tgdzh/WebstormProjects/rentApp_backend/models&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/tgdzh/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/models" />
@@ -120,7 +119,9 @@
       <workItem from="1715091103654" duration="5735000" />
       <workItem from="1715144474651" duration="11000" />
       <workItem from="1715337539935" duration="1551000" />
-      <workItem from="1715340390462" duration="17984000" />
+      <workItem from="1715340390462" duration="18036000" />
+      <workItem from="1715528172651" duration="525000" />
+      <workItem from="1715528712101" duration="2592000" />
     </task>
     <task id="LOCAL-00001" summary="add: added .gitignore and catalog config">
       <option name="closed" value="true" />
@@ -322,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715526609052</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add: added role middleware">
+      <option name="closed" value="true" />
+      <created>1715528132498</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1715528132498</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,6 +368,7 @@
     <MESSAGE value="add: added default value" />
     <MESSAGE value="add: added create method for apartmentController" />
     <MESSAGE value="add: added get certain apartment" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: added get certain apartment" />
+    <MESSAGE value="add: added role middleware" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: added role middleware" />
   </component>
 </project>
