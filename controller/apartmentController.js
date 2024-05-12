@@ -37,7 +37,15 @@ class ApartmentController {
         }
     };
 
-    // async getOne(req, res) {};
+    async getOne(req, res) {
+        const { id } = req.params;
+        const apartment = await Apartment.findOne({
+           where: { id },
+            include: [{ model: ApartmentInfo, as: 'info' }],
+        });
+
+        res.status(201).json(apartment);
+    };
 
     async update(req, res) {};
 
