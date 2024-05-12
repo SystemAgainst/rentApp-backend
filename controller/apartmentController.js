@@ -14,9 +14,9 @@ class ApartmentController {
 
     async create(req, res) {
         try {
-            const { title, description, address, square, room_count } = req.body;
+            const { title, description, address, square, room_count, cost } = req.body;
 
-            const apartmentInfo = await ApartmentInfo.create({ title, description, address, square, room_count });
+            const apartmentInfo = await ApartmentInfo.create({ title, description, address, square, room_count, cost });
 
             res.status(201).json(apartmentInfo);
         } catch (error) {

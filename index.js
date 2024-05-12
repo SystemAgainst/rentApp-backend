@@ -5,6 +5,7 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const errorHandler = require('./middlewares/errorHandlingMiddleware');
 const router = require('./routes/index');
+const models = require('./models');
 
 const swaggerUi = require('swagger-ui-express');
 const swaggerFile = require('./config/swagger-output.json');

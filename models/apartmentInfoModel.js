@@ -16,6 +16,10 @@ const ApartmentInfo = sequelize.define('ApartmentInfo', {
         type: DataTypes.TEXT,
         allowNull: true,
     },
+    cost:  {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    },
     address: {
         type: DataTypes.TEXT,
         allowNull: false

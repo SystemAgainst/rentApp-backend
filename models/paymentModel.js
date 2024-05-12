@@ -8,13 +8,15 @@ const Payment = sequelize.define('Payment', {
         primaryKey: true,
         autoIncrement: true
     },
-    cost: {
-        type: DataTypes.DECIMAL(10, 2),
+    is_paid: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false,
         allowNull: false
     },
     payment_date: {
         type: DataTypes.DATE,
-        allowNull: false
+        allowNull: false,
+        defaultValue: DataTypes.NOW,
     },
     apartment_id: {
         type: DataTypes.BIGINT,

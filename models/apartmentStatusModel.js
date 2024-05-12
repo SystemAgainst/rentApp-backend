@@ -11,11 +11,13 @@ const ApartmentStatus = sequelize.define('apartment-status', {
     },
     status: {
         type: DataTypes.ENUM('available', 'booked', 'maintenance', 'unavailable'),
+        defaultValue: 'available',
         allowNull: false
     },
     booking_date: {
         type: DataTypes.DATE,
-        allowNull: true
+        allowNull: true,
+        defaultValue: DataTypes.NOW,
     },
     comment: {
         type: DataTypes.TEXT,
