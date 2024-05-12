@@ -1,4 +1,4 @@
-const { ApartmentInfo } = require('../models');
+const { ApartmentInfo, Apartment, ApartmentStatus} = require('../models');
 
 
 class ApartmentController {
@@ -14,11 +14,22 @@ class ApartmentController {
 
     async create(req, res) {
         try {
-            const { title, description, address, square, room_count, cost } = req.body;
+            const { title, description, address, square, room_count, cost, user_id } = req.body;
 
-            const apartmentInfo = await ApartmentInfo.create({ title, description, address, square, room_count, cost });
+            const apartmentInfo = await ApartmentInfo.create({
+                title, description, address, square, room_count, cost
+            });
 
-            res.status(201).json(apartmentInfo);
+            const apartmentStatus = await ApartmentStatus.create({});
+
+            const apartment = await Apartment.create({
+                user_id,
+                apartment_info_id: apartmentInfo.id,
+                apartment_status_id: apartmentStatus.id,
+                rental_cost: apartmentInfo.cost,
+            });
+
+            res.status(201).json(apartment);
         } catch (error) {
             res.status(500).send({
                 message: "Ошибка при создании апартамента: " + error.message
