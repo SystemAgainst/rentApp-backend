@@ -32,6 +32,11 @@ const ApartmentInfo = sequelize.define('ApartmentInfo', {
         type: DataTypes.BIGINT,
         allowNull: false
     },
+    img: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+
 }, {
     tableName: 'apartment_info',
 });
